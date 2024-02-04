@@ -23,7 +23,7 @@ public class TestController {
     }
 
     @PostMapping
-    public void guardar(@RequestBody TestDto testDto){
-        testService.save(testDto);
+    public void guardar(@RequestBody Test test){
+        testService.save(test);
     }
 }
