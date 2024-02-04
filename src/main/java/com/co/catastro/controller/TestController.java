@@ -1,6 +1,7 @@
 package com.co.catastro.controller;
 
 import com.co.catastro.dao.Test;
+import com.co.catastro.dto.TestDto;
 import com.co.catastro.service.TestService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +23,7 @@ public class TestController {
     }
 
     @PostMapping
-    public void guardar(@RequestBody Test test){
-        testService.save(test);
+    public void guardar(@RequestBody TestDto testDto){
+        testService.save(testDto);
     }
 }
